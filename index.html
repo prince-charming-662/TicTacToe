@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="grid-size-selector">
+        <button onclick="startGame(3)">3x3</button>
+        <button onclick="startGame(4)">4x4</button>
+        <button onclick="startGame(5)">5x5</button>
+    </div>
+    <div id="grid-container">
+        <div id="tic-tac-toe-grid"></div>
+    </div>
+    <button id="restart-button" style="display: none;" onclick="restartGame()">Restart</button>
+    <button id="select-new-grid" style="display: none;" onclick="showGridSizeSelector()">Select New Grid</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

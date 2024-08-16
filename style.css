@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center the grid vertically */
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.grid-size-selector {
+    margin-bottom: 20px;
+}
+
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center the grid horizontally */
+}
+
+#tic-tac-toe-grid {
+    display: grid;
+    gap: 0;
+    /* No gap between cells */
+    background-color: white;
+    /* Default white background for the grid */
+    border: 2px solid #333;
+}
+
+#tic-tac-toe-grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #333;
+    /* Add border to distinguish cells */
+    transition: background-color 0.3s ease;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
